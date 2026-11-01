@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Aimoga Help Center",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0C63ED",
+    "light": "#A0D2EA",
+    "dark": "#0C63ED"
   },
   "favicon": {
     "light": "/images/favicon.png",

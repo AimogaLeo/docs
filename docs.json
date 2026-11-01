@@ -13,25 +13,7 @@
   },
   "navigation": {
     "pages": [
-      {
-        "group": "云平台",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      },
-      {
-        "group": "墨茵机器人",
-        "pages": []
-      },
-      {
-        "group": "Argos-X1机器狗",
-        "pages": []
-      },
-      {
-        "group": "智警机器人",
-        "pages": []
-      }
+      "welcome-to-visit-ai-moga"
     ],
     "global": {
       "anchors": [

@@ -44,12 +44,12 @@
     "links": [
       {
         "href": "mailto:support@aimoga-robot.com",
-        "label": "邮箱"
+        "label": "联系售后支持"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "官网",
+      "label": "墨甲机器人官网",
       "href": "https://www.aimoga-robot.com/global/zh/"
     }
   },

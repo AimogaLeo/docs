@@ -24,13 +24,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "云平台",
+          "href": "https://cloud-cn.aimoga-robot.com/",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "anchor": "开发者门户",
+          "href": "https://cloud-cn.aimoga-robot.com/aimoga-docs/",
           "icon": "newspaper"
         }
       ]
@@ -41,12 +41,6 @@
     "dark": "/images/dark.png"
   },
   "navbar": {
-    "links": [
-      {
-        "href": "mailto:support@aimoga-robot.com",
-        "label": "联系售后支持"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "官网",

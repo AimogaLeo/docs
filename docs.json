@@ -49,7 +49,7 @@
     ],
     "primary": {
       "type": "button",
-      "label": "墨甲机器人官网",
+      "label": "官网",
       "href": "https://www.aimoga-robot.com/global/zh/"
     }
   },
@@ -65,11 +65,7 @@
       "vscode"
     ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  "markdown": {
+    "schema": true
   }
 }

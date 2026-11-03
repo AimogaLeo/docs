@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Aimoga Help Center",
+  "name": "墨甲机器人服务知识库",
   "colors": {
     "primary": "#0C63ED",
     "light": "#A0D2EA",
@@ -55,5 +55,6 @@
   },
   "markdown": {
     "schema": true
-  }
+  },
+  "description": "墨甲机器人服务知识库是面向用户与客服的产品售后支持资料库，集中汇总产品操作使用、日常运维和常见故障处理FAQ等信息，便于快速查阅与排障。"
 }

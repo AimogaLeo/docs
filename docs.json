@@ -13,7 +13,24 @@
   },
   "navigation": {
     "pages": [
-      "welcome-to-visit-ai-moga"
+      "welcome-to-visit-ai-moga",
+      {
+        "group": "墨茵机器人",
+        "pages": [
+          {
+            "group": "产品入门与操作",
+            "pages": []
+          },
+          {
+            "group": "产品软件运维",
+            "pages": []
+          },
+          {
+            "group": "产品常见故障FAQ",
+            "pages": []
+          }
+        ]
+      }
     ],
     "global": {
       "anchors": [

@@ -19,7 +19,9 @@
         "pages": [
           {
             "group": "产品入门与操作",
-            "pages": []
+            "pages": [
+              "untitled-page"
+            ]
           },
           {
             "group": "产品软件运维",

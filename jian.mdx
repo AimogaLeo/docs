@@ -1,0 +1,218 @@
+---
+title: "扫描建图与路线导航讲解"
+---
+
+> **适用产品**：墨茵机器人<br />本文覆盖地图构建、地图激活、路线配置、路线运行及地图显示控制。
+
+## 1 功能说明
+
+| 功能 | 说明 |
+| --- | --- |
+| 地图构建 | 通过激光雷达扫描环境，建立 2D 地图 |
+| 地图激活 | 将构建好的地图设为当前使用地图 |
+| 路线配置 | 在已激活地图上设置导航点位与路径 |
+| 路线运行 | 机器人按预设路线自主导航行走 |
+
+## 2 地图构建
+
+### 2.1 新建地图
+
+<Note>
+  建图前必须确保机器人附近地面平坦，机器人无倾斜、摇晃。
+</Note>
+
+#### 2.1.1 准备工作
+
+- 将机器人移动至起点位置。
+  - 方法一：机器人放置于待机站 → 切换至曲腿站立模式 → 推动机器人和待机站到目标位置。
+  - 方法二：切换至直腿行走模式 → 移出待机站 → 遥控机器人到目标位置。
+- 让机器人面向有标志性的物体（桌子、椅子等），不能面向玻璃等透光性物体。
+
+#### 2.1.2 启动建图
+
+- APP 中点击“设置” → “地图库” → “新建地图”。
+- 输入地图标题，拉起建图程序。
+- 等待界面成功显示点云（首次显示可能需超过 10 秒）。
+
+![新建地图界面示意图](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODRhYjQzZWU2YjA3NjZiMDc0YzFiMmQ1OTQxNGM3ODRfYTkwNDc5OTJlMjk1MWU3NzIwMTYyMTQ1NzZlMmQ1NmFfSUQ6NzYzOTMzNDQ4ODE1NzgwMTY1MV8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+![点云显示示意图](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTMyMmRiMjc5OTgxNWY5MTM5MzhiMzMzZjNhZWQ1NjJfNzM1YTI4NTdlYWE2ZmU3YzEzZTRkNzYxMzY3NDlmNjdfSUQ6NzYzOTMzNDQ4ODUyNjc2OTMzN18xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+![建图执行示意图](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzVhNDBlMTUzMzZhZGUxZGZhYTk1YWUyODEwNDBiNDJfMzM1ZGI0NjVmZGRjMzZmOWY3MjVkZmRmNWFjY2JiMTdfSUQ6NzYzOTMzNDQ4ODM3NTkyMTg2OF8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+#### 2.1.3 执行建图
+
+- 点云出现后，移动机器人进行建图。
+
+<Note>
+  建图面积超过 3000 ㎡或单向距离超过 60 m 时，请向我司技术进行确认。
+</Note>
+
+#### 2.1.4 保存地图
+
+- 建图完成后点击“保存地图”。
+
+### 2.2 编辑地图
+
+#### 2.2.1 进入编辑
+
+- “设置” → “地图库” → 选中地图 → 右上角“...” → “编辑”。
+
+![地图编辑入口示意图](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTcxMjM2OTQxY2IxZDg4NzJmNWI4NWFjZjJiZTA2ZTNfMzg5MzRhNjlhYTZlNWY2NjY5NDkwZDM1ZjA0YTBlMjZfSUQ6NzYzOTMzNDQ5MDM5MzE1MjY5MF8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+#### 2.2.2 编辑操作
+
+支持以下编辑操作：
+
+- 添加点位：输入关键点位名称（专用于流程、角色对话触发机器人导航功能）。
+- 添加障碍墙：标记不可通行区域。
+- 添加封闭围栏：设置边界。
+- 橡皮擦：清除误标记区域。
+
+![地图编辑操作示意图一](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2RiZjc5NDAwMTM0NTYzZDk3MmU4MWY1ZDAxNGEwNjNfNzc1OWYwOGEwNDE1NGEzNWJiNmM0OWM0NjYwYzQ2MjdfSUQ6NzYzOTMzNDQ5MDI1MDUyOTk5MF8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+![地图编辑操作示意图二](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTJmNWM4NmVmMDMzMWViYTlkNDY5MGMwY2Q1ZGY4MTNfYmRiMTNiMzM0YTZhMjE5ZmM5NDFlNGE4YzIwOTljYjlfSUQ6NzYzOTMzNDQ4ODkwMDM3MzcwOF8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+## 3 地图激活
+
+### 3.1 激活条件
+
+- 将机器人推动至新建地图的起始位置，或遥控行走至该位置。
+- 确保朝向与建图原点的初始方向基本一致。
+
+### 3.2 激活操作
+
+#### 3.2.1 激活地图
+
+- 地图库中选中编辑好的地图，点击“激活”。
+- 激活成功后地图左下角高亮显示“已激活”。
+
+![地图激活成功示意图](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Yjg2MmEwZWY4ZTI0Y2VlYWVlYTFmYTA4NTc2NWJlOGVfZTZiYjRkMTczYjgzZmZhZjNjYjY2NGVjMDdmN2I5ZTFfSUQ6NzYzOTMzNDQ4OTU4Nzg5NTUxMF8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+![地图激活状态示意图](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmU5ZjZhYzAyOTcyZTQ1NTM5ODQ4ZDAyNmNlZmZjOGVfZTJjOTY5NGNhNTRmZWYyMmIyNDU5YWM4MmFiOTgyZmVfSUQ6NzYzOTMzNDQ5MDYwNzA0NTgxMV8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+#### 3.2.2 激活失败处理
+
+- 重新激活。
+- 激活时尽量让机器人面向有标志性的物体。
+- 机器人支持全域激活，移动机器人到其他位置进行激活。
+
+#### 3.2.3 位置核对
+
+- 对地图进行编辑，核对机器人当前在地图的位置是否正确。
+- 当前位置正确时，退出编辑界面。
+
+![位置核对示意图](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODdhMDA0Y2RmOTcxYTYzOGZjYWFlM2IzNDBkNTMzZTJfOWI1ZDc0MjE1NWJhNTJjN2E0MmMzYWJlNzNhOGVjMGFfSUQ6NzYzOTMzNDQ5MDE5NjE4NDI1N18xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+<Warning>
+  若使用云平台配置的流程、角色中涉及导航任务，则需要提前激活对应地图。
+</Warning>
+
+## 4 路线配置
+
+<Warning>
+  必须先激活地图，才能新建路线。
+</Warning>
+
+### 4.1 新建路线
+
+#### 4.1.1 准备工作
+
+- 确保地图已激活。
+- 若手动推动机器人建路线：放置于待机站，处于曲腿站立状态。
+- 若遥控方式建路线：切换至直腿行走模式。
+
+#### 4.1.2 创建路线
+
+- “配置” → “路线管理” → “新建路线”。
+
+![新建路线入口示意图](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmNmZTIxYjRiM2QzYTg3OWY3NGZkZmM2MjY0NWE5NDdfZTJkYWYwYzVmODhiZjdiODk3NmFjOGUxOTA1ODNiOWVfSUQ6NzYzOTMzNDQ5MDEzMzEzODY0OV8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+#### 4.1.3 添加点位
+
+- 点击右下角“+添加点位”。
+- 设置点位动作和话术。
+- 设置机器人开始执行的时间和顺序。
+- 点击“保存位点信息”。
+
+![添加点位示意图一](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjZkZjZmMGEwOWVhOWI0NmNlNjYxNmUxNmIyNWNlYjFfMjA3NTEzYzUyYTZiNTQyZTIyZjcwYTNiZDI1NGU0MGNfSUQ6NzYzOTMzNDQ5MDU1MDA0NTkwNV8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+![添加点位示意图二](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGIyMmFkOTg1Nzg4N2ZjMDhmZjE3ODhiODEzZjM1NTlfN2RiNzdhYTcyYmFhYWVhNzQ2YjMwOTk1M2U5Nzg1MmFfSUQ6NzYzOTMzNDQ4OTU3NTQ0MzY2MF8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+<Warning>
+  成功添加点位后，推动机器人至下一位置时，请勿立即添加新点位，务必等待 APP 界面上机器人实时位置图标同步到位后再操作。
+</Warning>
+
+#### 4.1.4 保存路线
+
+- 所有点位添加完成后，自定义左上角路线名称。
+- 点击“保存”。
+
+### 4.2 编辑路线
+
+- 路线管理界面选中路线 → 右上角“...” → “编辑”/“删除”。
+- 长按已生成点位或点击三条横线：更改执行前时间、动作和话术。
+- 点击点位框右边“×”：删除点位。
+
+![编辑路线示意图一](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTA0YjgzNjc2NWExNzhjOGZjYzgyM2E1NmM1YTE2ZDNfMzY4MTFlODdmNWFhNjhmNmVhMzU0MmUyMmU0YzU1OTNfSUQ6NzYzOTMzNDQ5MDYzNjQyMjMzMl8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+![编辑路线示意图二](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDdjNDFmYzRlNDBmYzBmOTNhN2IxZTBiN2M2NTc2NzhfOGM3OTAzY2Y1MTdmZmNmOTdiNzZmNDQwZjA2YjQ1MWFfSUQ6NzYzOTMzNDQ5MjEwODUwODM3NF8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+## 5 路线运行
+
+### 5.1 运行准备
+
+- 确保地图已激活。
+- 机器人处于直腿行走状态。
+
+### 5.2 执行路线
+
+#### 5.2.1 启动运行
+
+- 控制界面点击“运行路线”。
+- 选中要运行的路线，输入循环次数（最大 10 次），点击“开始运行”。
+
+![运行路线示意图](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTdmMzg2YmVhODVkNjkzNDYyNDZhY2IwOWE3YTUwNGRfZWVlMDk4NmYyNGU5OWMzMzA1MDE5NWRhYzllZjM4NWFfSUQ6NzYzOTMzNDQ5MDI1MDYyODI5NF8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)
+
+#### 5.2.2 运行控制
+
+| 按钮 | 功能 |
+| --- | --- |
+| 暂停 | 机器人停止执行路线 |
+| 继续 | 执行剩余路线点位 |
+| 停止 | 结束路线任务，返回控制页面 |
+
+<Note>
+  运行路线的初始点位可根据需要自行确定。开始运行后机器人会从当前放置的初始点位走到标定好的第一个点位，然后执行路线。
+</Note>
+
+## 6 地图显示控制
+
+<table>
+  <colgroup>
+    <col width="100" />
+    <col width="575" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>操作</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>打开地图</td>
+      <td>点击“地图开启”按钮，控制界面显示 2D 地图</td>
+    </tr>
+    <tr>
+      <td>全屏展开</td>
+      <td>点击地图右上角缩放图标，铺满整个控制界面</td>
+    </tr>
+    <tr>
+      <td>关闭地图</td>
+      <td>再次点击“地图开启”按钮关闭</td>
+    </tr>
+  </tbody>
+</table>
+
+![地图显示控制示意图](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjNjOTMxOGNhZGIyYTY0ZmQ2NTZmMTVjOWNlZDVhMjRfNjk5OWUzZDIxMWQwMGU3NWU3NzM5NGE4YjNmZTVmNzZfSUQ6NzYzOTMzNDQ5MTgxODkzNzUyMl8xNzkzNzgyODIyOjE3OTM4NjkyMjJfVjM)

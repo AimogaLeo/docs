@@ -17,6 +17,7 @@
       {
         "group": "墨茵机器人",
         "pages": [
+          "mornine",
           {
             "group": "产品入门与操作",
             "pages": [
@@ -24,7 +25,9 @@
               "mornine/safety_notice",
               "mornine/standby_station",
               "mornine/unpacking",
-              "mornine/transshipment"
+              "mornine/transshipment",
+              "mdx-image-https-internal-api-drive-stream-feishu-cn-space-api-box-stream-download-authcode-code-m2-iw-mw-vm-m2-zj-md-bj-m2-fh-ng-yz-mw-yy-oge-4-yz-jm-yj-yz-mzhf-mda-0-n-dk1-n-thj-yj-y0-ytm-0-nm-nj",
+              "untitled-page"
             ]
           },
           {

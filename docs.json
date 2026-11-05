@@ -40,7 +40,9 @@
             "pages": [
               "orin-x86",
               "mgcs-ops-sn",
-              "x86-sn"
+              "orin",
+              "x86-sn",
+              "x86"
             ]
           },
           {

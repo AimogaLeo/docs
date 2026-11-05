@@ -47,14 +47,21 @@
               "orin",
               "orin-2-4-ghz",
               "mgcs-ops-sn",
-              "adb"
+              "adb",
+              "ai-brain-2",
+              "ai-brain",
+              "ai-brain-3"
             ]
+          },
+          {
+            "group": "产品常见故障FAQ",
+            "pages": []
+          },
+          {
+            "group": "硬件维修与拆装",
+            "pages": []
           }
         ]
-      },
-      {
-        "group": "产品常见故障FAQ",
-        "pages": []
       }
     ],
     "global": {

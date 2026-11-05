@@ -39,7 +39,8 @@
             "group": "产品软件运维",
             "pages": [
               "orin-x86",
-              "mgcs-ops-sn"
+              "mgcs-ops-sn",
+              "x86-sn"
             ]
           },
           {

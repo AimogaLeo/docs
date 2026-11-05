@@ -38,11 +38,13 @@
           {
             "group": "产品软件运维",
             "pages": [
-              "orin-x86",
-              "mgcs-ops-sn",
-              "orin",
+              "x86-ssh",
               "x86-sn",
-              "x86"
+              "x86",
+              "orin-x86",
+              "orin",
+              "adb",
+              "mgcs-ops-sn"
             ]
           },
           {

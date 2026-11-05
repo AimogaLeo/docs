@@ -39,19 +39,20 @@
             "group": "产品软件运维",
             "pages": [
               "x86-ssh",
+              "x86-2",
               "x86-sn",
               "x86",
               "orin-x86",
               "orin",
-              "adb",
-              "mgcs-ops-sn"
+              "mgcs-ops-sn",
+              "adb"
             ]
-          },
-          {
-            "group": "产品常见故障FAQ",
-            "pages": []
           }
         ]
+      },
+      {
+        "group": "产品常见故障FAQ",
+        "pages": []
       }
     ],
     "global": {

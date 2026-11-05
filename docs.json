@@ -17,10 +17,10 @@
       {
         "group": "墨茵机器人",
         "pages": [
-          "mornine",
           {
             "group": "产品入门与操作",
             "pages": [
+              "mornine",
               "mornine/user_manual",
               "mornine/safety_notice",
               "mornine/standby_station",

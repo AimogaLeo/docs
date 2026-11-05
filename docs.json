@@ -43,7 +43,9 @@
               "x86-sn",
               "x86",
               "orin-x86",
+              "orin-2",
               "orin",
+              "orin-2-4-ghz",
               "mgcs-ops-sn",
               "adb"
             ]

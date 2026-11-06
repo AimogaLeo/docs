@@ -49,10 +49,12 @@
               "mgcs-2",
               "mgcs-ops-sn",
               "mgcs",
+              "mgcs-hand-control",
               "adb",
               "ai-brain",
               "ai-brain-2",
-              "ai-brain-3"
+              "ai-brain-3",
+              "adb-2"
             ]
           },
           {

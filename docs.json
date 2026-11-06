@@ -60,11 +60,10 @@
               "app-2",
               "ota",
               "shuo-i",
+              "untitled-page-3",
               {
                 "group": "软件版本说明",
-                "pages": [
-                  "untitled-page-3"
-                ]
+                "pages": []
               }
             ]
           },

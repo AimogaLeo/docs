@@ -55,7 +55,16 @@
               "ai-brain",
               "ai-brain-2",
               "ai-brain-3",
-              "adb-2"
+              "ai-brain-4",
+              "adb-2",
+              "app-2",
+              "ota",
+              "shuo-i",
+              {
+                "group": "软件版本说明",
+                "pages": []
+              },
+              "untitled-page-3"
             ]
           },
           {

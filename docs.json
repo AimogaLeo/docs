@@ -36,6 +36,13 @@
             ]
           },
           {
+            "group": "产品常见故障FAQ",
+            "pages": [
+              "untitled-page-8",
+              "untitled-page-9"
+            ]
+          },
+          {
             "group": "产品软件运维",
             "pages": [
               "x86-ssh",
@@ -77,13 +84,6 @@
               "v2-0-12",
               "v2-0-12-1",
               "v2-0-13-1"
-            ]
-          },
-          {
-            "group": "产品常见故障FAQ",
-            "pages": [
-              "untitled-page-8",
-              "untitled-page-9"
             ]
           },
           {

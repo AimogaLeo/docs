@@ -36,10 +36,13 @@
             ]
           },
           {
-            "group": "产品常见故障FAQ",
+            "group": "产品常见问题FAQ",
             "pages": [
               "untitled-page-8",
-              "untitled-page-9"
+              "untitled-page-9",
+              "untitled-page-10",
+              "untitled-page-12",
+              "app-3"
             ]
           },
           {
@@ -89,7 +92,8 @@
           {
             "group": "硬件维修与拆装",
             "pages": [
-              "untitled-page-7"
+              "untitled-page-7",
+              "untitled-page-11"
             ]
           }
         ]

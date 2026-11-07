@@ -106,7 +106,10 @@
         "pages": [
           {
             "group": "产品入门与操作",
-            "pages": []
+            "pages": [
+              "untitled-page-15",
+              "untitled-page-16"
+            ]
           },
           {
             "group": "产品常见问题FAQ",

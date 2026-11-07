@@ -97,6 +97,31 @@
             ]
           }
         ]
+      },
+      {
+        "group": "Argos机器狗",
+        "pages": [
+          {
+            "group": "产品入门与操作",
+            "pages": []
+          },
+          {
+            "group": "产品常见问题FAQ",
+            "pages": []
+          },
+          {
+            "group": "产品软件运维",
+            "pages": []
+          },
+          {
+            "group": "软件版本说明",
+            "pages": []
+          },
+          {
+            "group": "硬件维修与拆装",
+            "pages": []
+          }
+        ]
       }
     ],
     "global": {
